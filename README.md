@@ -7,6 +7,8 @@
 3.  在aws上构建一个maven私服
 ## Task 3:
 建立jfrog maven 私服（目前ip公开可访问：http://3.108.158.201:8082/ ）
+## Task 4:
+搭建mysql数据库，增加简单的登录逻辑( http://3.108.27.127:8080/login/{username}/{password} )
 
 ## 流程介绍：
 目前该自动构建项目已初步完成，实现功能：
