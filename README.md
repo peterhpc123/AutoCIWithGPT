@@ -14,7 +14,7 @@
 
 ## 流程介绍：
 目前该自动构建项目已初步完成，实现功能：
-1. 本地开发完，git push 到github上
+1. 本地开发完，git push 到github上,并在github显示当前构建状态
 2. webhook根据push的记录发送http call 到ci服务器上
 3. ci已配置maven jdk webhhok插件，利用webhook插件实现构建项目，
 4. 构建主要包括：clean install, deploy
