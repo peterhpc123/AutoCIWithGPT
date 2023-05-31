@@ -1,5 +1,8 @@
 package com.example.autociwithgpt.api;
 
+import lombok.Data;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
@@ -7,6 +10,7 @@ import java.util.ArrayList;
  * @author: pehong
  * @date: 2023-05-31 13:12
  */
+@Data
 public class CommonResult<T> {
     private long code;
     /**
@@ -24,10 +28,10 @@ public class CommonResult<T> {
         this.data=data;
     }
     public static <T> CommonResult<T> success(T data){
-        return new CommonResult<T>(200, "操作成功",data);
+        return new CommonResult<T>(200, "注册成功",data);
     }
 
-    public static <T> CommonResult<T> fail(){
-        return new CommonResult<T>(500,"登录失败",null);
+    public static <T> CommonResult<T> fail(String err, T data){
+        return new CommonResult<T>(433,err,data);
     }
 }

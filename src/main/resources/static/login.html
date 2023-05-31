@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<!--<script src="jquery.js"></script>-->
+<body>
+
+<form id="login" action="/signin" method="post">
+  <label for="username">姓名: </label>
+  <input type="text" id="username" name="username">
+  <br>
+  <label for="password">密码: </label>
+  <input type="text" id="password" name="password">
+  <br>
+  <input type="submit" value="登录">
+</form>
+<!--<script>-->
+<!--  $('#login').submit(function (event) {-->
+<!--    event.preventDefault();-->
+<!--    var formData = $(this).serializeArray();-->
+<!--    var jsonFormData = {};-->
+<!--    $.each(formData, function() {-->
+<!--      jsonFormData[this.name] = this.value;-->
+<!--    });-->
+
+<!--    // 例如使用 AJAX：-->
+<!--    $.ajax({-->
+<!--      type: 'post',-->
+<!--      url: '/signin',-->
+<!--      data: JSON.stringify(jsonFormData),-->
+<!--      success: function (response) {-->
+<!--        alert(response.message)-->
+<!--      },-->
+<!--      error: function (error) {-->
+<!--        // 请求失败的处理-->
+<!--        alert(error.message)-->
+<!--      }-->
+<!--    });-->
+<!--  });-->
+<!--</script>-->
+</body>
+</html>
