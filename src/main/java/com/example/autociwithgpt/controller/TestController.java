@@ -1,5 +1,7 @@
 package com.example.autociwithgpt.controller;
 
+import com.example.autociwithgpt.config.Bean1;
+import com.example.autociwithgpt.config.BeanParent;
 import com.example.autociwithgpt.exception.LoginException;
 import com.example.autociwithgpt.service.Search;
 import jakarta.servlet.http.HttpServletRequest;
@@ -7,9 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
 
 import java.io.IOException;
 
@@ -20,6 +20,12 @@ import java.io.IOException;
  */
 @RestController
 public class TestController {
+    @Autowired
+    BeanParent bean1;
+
+    @Autowired
+    BeanParent bean2;
+
     @Autowired
     Search search;
     @GetMapping("/sabrinanpeter")
