@@ -19,8 +19,8 @@
     <distributionManagement>
         <snapshotRepository>
             <id>snapshots</id>
-            <name>dfb007746cdd-snapshots</name>
-            <url>http://3.108.158.201:8081/artifactory/libs-snapshot</url>
+            <name>124fa5d94611-snapshots</name>
+            <url>http://3.108.158.201:8081/artifactory/maven-libs-snapshot</url>
         </snapshotRepository>
     </distributionManagement>
     <dependencies>
