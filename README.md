@@ -9,8 +9,8 @@
 建立jfrog maven 私服（目前ip公开可访问：http://3.108.158.201:8082/ ） 磁盘空间不足，正在修复
 ## Task 4:
 搭建mysql数据库<br>
-增加简单的登录逻辑( http://3.108.27.127:8080/login.html )<br>
-增加简单的注册逻辑(http://3.108.27.127:8080/signup.html )
+增加简单的登录逻辑( http://13.200.61.86:8081/login.html )<br>
+增加简单的注册逻辑(http://13.200.61.86:8081/signup.html )
 ## Task5:
 搭建redis
 
@@ -25,5 +25,5 @@
 ## 后续：
 1. 开发jfog 服务，实现拉取maven中央仓库项目？（p1）
 2. 完成setting自动配置工具开发（p3）
-3. ci build 完之后利用ssh登录到远程服务器,并运行（ip地址：http://3.108.27.127:8080/sabrinanpeter ）
+3. ci build 完之后利用ssh登录到远程服务器,并运行（ip地址：http://13.200.61.86:8081/test ）
 4. 把gpt集成到里面，做二次开发

@@ -27,7 +27,7 @@ public class TestController {
 
     @Autowired
     Search search;
-    @GetMapping("/sabrinanpeter")
+    @GetMapping("/test")
     public String hello(){
         return "我刚写好的高时延低可靠系统！";
     }
